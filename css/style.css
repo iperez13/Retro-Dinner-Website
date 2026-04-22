@@ -5,9 +5,6 @@ body {
 	background :url("../images/bg-body.jpg");
 	line-height :25px;
 }
-a {
-	outline :0;
-}
 label {
 	font-family :'NunitoRegular';
 	font-size :16px;
@@ -62,12 +59,10 @@ img {
 #header div a img {
 	border :0;
 	float :right;
-	overflow :hidden;
 }
 #header div img.logo {
 	border :0;
 	float :left;
-	overflow :hidden;
 	margin-top :40px;
 }
 #header div ul.navigation {
@@ -77,7 +72,6 @@ img {
 	position :absolute;
 	left :0px;
 	top :160px;
-	overflow :hidden;
 	width :620px;
 }
 #header div ul.navigation li {
@@ -104,17 +98,20 @@ img {
 #body {
 	width :960px;
 	margin :0 auto;
-	overflow :hidden;
+}
+#body::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 #body .featured {
 	width :960px;
-	overflow :hidden;
 	margin-bottom :0;
 }
 #body .featured img {
 	border :0;
 }
-#body .featured h2 {
+#body .featured h1 {
 	font-family :'Lobster1.4Regular';
 	font-size :36px;
 	color :#1b6568;
@@ -234,9 +231,10 @@ img {
 	color :#822619;
 	font-weight :normal;
 }
-#body #content div div ul li h2 a:hover {
+#body #content div div ul li h2 a:hover, #body #content div div ul li h2:hover span {
 	color :#80210b;
 }
+
 #body .content div div form label {
 	display :block;
 }
@@ -346,7 +344,7 @@ img {
 #body .content div div ul li.last {
 	border :none;
 }
-#body .content div div ul li h2 a {
+#body .content div div ul li h2 a, #body .content div div ul li h2 span {
 	font-family :'Lobster1.4Regular';
 	font-size :24px;
 	color :#822619;
@@ -555,7 +553,8 @@ img {
 	text-transform :uppercase;
 	width :auto;
 }
-#body div#section div.section div div h2 a {
+#body div#section div.section div div h2 a,
+#body div#section div.section div div h2 span {
 	font-family :'LimelightRegular';
 	color :#822619;
 	font-size :28px;
@@ -602,7 +601,8 @@ img {
 	width :auto;
 	margin-top :70px;
 }
-#body div#section div.section div div a.price {
+#body div#section div.section div div a.price, 
+#body div#section div.section div div span.price {
 	background :transparent url("../images/icon.png") no-repeat 0 0;
 	width :90px;
 	height :69px;
@@ -617,7 +617,8 @@ img {
 	top :0;
 	left :-100px;
 }
-#body div#section div.section div div a.price span {
+#body div#section div.section div div a.price span,
+#body div#section div.section div div span.price span {
 	display :block;
 	font-family :'LimelightRegular';
 	font-size :24px;
@@ -755,7 +756,6 @@ img {
 	margin :0 auto;
 	padding :10px 0 0 0;
 	display :inline-block;
-	overflow :hidden;
 	height :20px;
 }
 #footer div ul li ul.navigation li {
