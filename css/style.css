@@ -111,7 +111,7 @@ img {
 #body .featured img {
 	border :0;
 }
-#body .featured h1 {
+#body .featured h2 {
 	font-family :'Lobster1.4Regular';
 	font-size :36px;
 	color :#1b6568;
@@ -173,7 +173,7 @@ img {
 	background-position :center center;
 	background-repeat :repeat-y;
 }
-#body #content div div h1 {
+#body #content div div h2 {
 	font-family :'Lobster1.4Regular';
 	font-size :36px;
 	color :#1b6568;
@@ -196,13 +196,13 @@ img {
 	color :#822619;
 	font-weight :normal;
 }
-#body #content div div ul li h2 {
+#body #content div div ul li h3 {
 	font-family :'Lobster1.4Regular';
 	font-size :18px;
 	color :#822619;
 	font-weight :normal;
 }
-#body #content div div ul li h2 a {
+#body #content div div ul li h3 a {
 	font-family :'Lobster1.4Regular';
 	font-size :24px;
 	color :#822619;
@@ -231,7 +231,7 @@ img {
 	color :#822619;
 	font-weight :normal;
 }
-#body #content div div ul li h2 a:hover, #body #content div div ul li h2:hover span {
+#body #content div div ul li h3 a:hover, #body #content div div ul li h3:hover span {
 	color :#80210b;
 }
 
@@ -299,7 +299,7 @@ img {
 	background-position :center center;
 	background-repeat :repeat-y;
 }
-#body .content div div h4 {
+#body .content div div h3 {
 	font-size :24px;
 	color :#822619;
 	font-family :'Lobster1.4Regular';
@@ -319,7 +319,7 @@ img {
 #body .content div div p a:hover {
 	color :#80210b;
 }
-#body .content div div h1 {
+#body .content div div h2 {
 	font-family :'Lobster1.4Regular';
 	font-size :36px;
 	color :#1b6568;
@@ -344,7 +344,7 @@ img {
 #body .content div div ul li.last {
 	border :none;
 }
-#body .content div div ul li h2 a, #body .content div div ul li h2 span {
+#body .content div div ul li h3 a, #body .content div div ul li h3 span {
 	font-family :'Lobster1.4Regular';
 	font-size :24px;
 	color :#822619;
@@ -399,7 +399,7 @@ img {
 	text-align :center;
 	padding-top :30px;
 }
-#body .sidebar h1 {
+#body .sidebar h2 {
 	color :#1b6568;
 	font-family :'Lobster1.4Regular';
 	font-size :36px;
@@ -543,7 +543,7 @@ img {
 	margin :0 20px 0 0;
 	float :left;
 }
-#body div#section div.section div div h2 {
+#body div#section div.section div div h3 {
 	font-family :'LimelightRegular';
 	color :#1b6568;
 	font-size :28px;
@@ -553,8 +553,8 @@ img {
 	text-transform :uppercase;
 	width :auto;
 }
-#body div#section div.section div div h2 a,
-#body div#section div.section div div h2 span {
+#body div#section div.section div div h3 a,
+#body div#section div.section div div h3 span, .section-h2red {
 	font-family :'LimelightRegular';
 	color :#822619;
 	font-size :28px;
@@ -562,11 +562,11 @@ img {
 	text-decoration :none;
 	line-height :30px;
 }
-#body div#section div.section div div h2 a:hover {
+#body div#section div.section div div h3 a:hover {
 	color :#1b6568;
 	text-decoration :none;
 }
-#body div#section div.section div div h3 {
+#body div#section div.section div div h4 {
 	font-family :'NunitoRegular';
 	color :#4c1407;
 	font-size :14px;
@@ -575,7 +575,7 @@ img {
 	padding :0;
 	width :auto;
 }
-#body div#section div.section div div h3 a {
+#body div#section div.section div div h4 a {
 	color :#80210b;
 	text-decoration :underline;
 }
@@ -599,7 +599,7 @@ img {
 	color :#4c1407;
 	font-size :14px;
 	width :auto;
-	margin-top :70px;
+	/* margin-top :70px; */
 }
 #body div#section div.section div div a.price, 
 #body div#section div.section div div span.price {
@@ -659,7 +659,7 @@ img {
 	padding-left :75px;
 	width :250px;
 }
-#footer div ul li h2 {
+#footer div ul li h3 {
 	color :#ebe9d7;
 	font-family :'Lobster1.4Regular';
 	font-weight :normal;
@@ -667,7 +667,7 @@ img {
 	margin :10px 0;
 	padding :0;
 }
-#footer div ul li h3 {
+#footer div ul li h4 {
 	color :#ebe9d7;
 	font-family :'Lobster1.4Regular';
 	font-size :24px;
@@ -783,4 +783,9 @@ img {
 }
 #footer div ul li ul.navigation li:first-child a {
 	border-left :none;
+}
+
+.section-blog {
+	margin:0;
+	padding: 0;
 }
